@@ -1,0 +1,32 @@
+{
+  "name": "fsd-task-2",
+  "version": "1.0.0",
+  "description": "Fullstack Development learning front-end task 2.",
+  "main": "main.js",
+  "scripts": {
+    "clean": "clear && rm -rf docs/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:parcel": "parcel src/index.pug",
+    "build:parcel": "parcel build src/index.pug -d ./docs --public-url ./",
+    "dev": "npm run clean && npm run dev:parcel",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pborisenko/fsd-task-2.git"
+  },
+  "keywords": [],
+  "author": "Petr Borisenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pborisenko/fsd-task-2/issues"
+  },
+  "homepage": "https://github.com/pborisenko/fsd-task-2#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "sass": "^1.26.5"
+  }
+}
