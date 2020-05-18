@@ -1,3 +1,4 @@
+include includes/color-preview.pug
 <!DOCTYPE html>
 html(lang="en-us")
   head
@@ -7,8 +8,11 @@ html(lang="en-us")
     title UI-Kit
     link(rel="stylesheet", href="/ui-kit/templates/basic/basic.sass")
     link(rel="stylesheet", href="/ui-kit/components/text-field/text-field.sass")
+    link(rel="stylesheet", href="/ui-kit/components/color-preview/color-preview.sass")
   body
     div(class="text-filed")
       div(class="text-filed__title") TEXT FIELD
       input(class="text-filed__input", placeholder="Email")
-    
+            
+    each item in [{mod: "main-100", title: "Dark Shade 100%", colorcode: "#1F2041"},{mod: "main-75", title: "Dark Shade 75%", colorcode: "#1F2041"},{mod: "main-50", title: "Dark Shade 50%", colorcode: "#1F2041"},{mod: "main-25", title: "Dark Shade 25%", colorcode: "#1F2041"},{mod: "main-5", title: "Dark Shade 5%", colorcode: "#1F2041"},{mod: "special-1", title: "Purple", colorcode: "#BC9CFF"},{mod: "special-2", title: "Green", colorcode: "#6FCF97"}]
+      +color-preview( item )

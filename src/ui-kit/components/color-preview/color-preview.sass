@@ -1,0 +1,53 @@
+/* Color Preview */
+//Import template variables
+@import "/ui-kit/templates/basic/_basic.sass"
+
+.color-preview
+  width: 269.26px
+  height: 70px
+  margin-top: 20px
+  &__rectangle
+    display: inline-block
+    width: 70px
+    height: 70px
+    border-radius: 6px
+    &_main-100
+      background-color: $color-main-100
+    &_main-75
+      background-color: $color-main-75
+    &_main-50
+      background-color: $color-main-50
+    &_main-25
+      background-color: $color-main-25
+    &_main-5
+      background-color: $color-main-5
+    &_special-1
+      background-color: $color-special-1
+    &_special-2
+      background-color: $color-special-2
+  &__title
+    display: inline-block
+    position: absolute
+    margin-top: 7px
+    margin-left: 40px
+    width: 159px
+    height: 57/2px
+    font-family: $font-h1-family
+    font-style: $font-h1-style
+    font-weight: $font-h1-weight
+    font-size: 19px
+    line-height: 29px
+    align-items: center
+  &__color-code
+    display: inline-block
+    position: absolute
+    margin-top: 33px
+    margin-left: 40px
+    width: 159px
+    height: 57px/2
+    font-family: $font-h1-family
+    font-style: $font-h1-style
+    font-weight: normal
+    font-size: 19px
+    line-height: 29px
+    align-items: center

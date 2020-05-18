@@ -1,0 +1,19 @@
+mixin color-preview( data )
+  .color-preview
+    case data.mod
+      when "main-100"
+        .color-preview__rectangle.color-preview__rectangle_main-100
+      when "main-75"
+        .color-preview__rectangle.color-preview__rectangle_main-75
+      when "main-50"
+        .color-preview__rectangle.color-preview__rectangle_main-50
+      when "main-25"
+        .color-preview__rectangle.color-preview__rectangle_main-25    
+      when "main-5"
+        .color-preview__rectangle.color-preview__rectangle_main-5  
+      when "special-1"
+        .color-preview__rectangle.color-preview__rectangle_special-1
+      when "special-2"
+        .color-preview__rectangle.color-preview__rectangle_special-2      
+    .color-preview__title= data.title
+    .color-preview__color-code= data.colorcode
